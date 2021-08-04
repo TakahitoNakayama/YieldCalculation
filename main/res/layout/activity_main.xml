@@ -1,197 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#1B87D9F4"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="16dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="積立期間"/>
-
-        <EditText
-            android:id="@+id/et_accumulation_period"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:inputType="number"
-            android:layout_marginHorizontal="8dp"
-            android:hint="年単位で入力"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="年"/>
-
-
-    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="16dp">
+        android:layout_height="match_parent"
+        android:background="#1B87D9F4"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="積立期間"/>
+
+            <EditText
+                android:id="@+id/et_accumulation_period"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:layout_marginHorizontal="8dp"
+                android:hint="年単位で入力"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:text="年"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="積立金額" />
+
+            <EditText
+                android:id="@+id/et_accumulation_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:layout_marginHorizontal="8dp"
+                android:hint="毎月の金額" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:text="円" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="利回り" />
+
+            <EditText
+                android:id="@+id/et_yield"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:layout_marginHorizontal="8dp"
+                android:hint="整数で入力" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:text="%" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_culc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#2448DA"
+            android:layout_gravity="center"
+            android:text="計算"
+            android:textAlignment="center"
+            android:textColor="#F4F1F6"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="運用成績" />
+
+
+            <TextView
+                android:id="@+id/textViewresult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:textSize="35dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+                android:textColor="@color/black"
+                android:text="円" />
+
+        </LinearLayout>
+
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
             android:textColor="@color/black"
-            android:text="積立金額(毎月)" />
-
-        <EditText
-            android:id="@+id/et_accumulation_amount"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:inputType="number"
-            android:layout_marginHorizontal="8dp"
-            android:hint="数字のみ入力" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="円" />
-
+            android:text="※利息の小数点は切り上げて計算しています。\n  税金は考慮していません"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="16dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="利回り" />
-
-        <EditText
-            android:id="@+id/et_yield"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:inputType="number"
-            android:layout_marginHorizontal="8dp"
-            android:hint="整数で入力" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="%" />
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/bt_culc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:paddingVertical="10dp"
-        android:backgroundTint="#2448DA"
-        android:layout_gravity="center"
-        android:text="計算"
-        android:textAlignment="center"
-        android:textColor="#F4F1F6"
-        android:textSize="24sp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="運用成績" />
-
-
-        <TextView
-            android:id="@+id/textViewresult"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="6"
-            android:layout_marginHorizontal="8dp"
-            android:textSize="35dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_marginHorizontal="8dp"
-            android:textColor="@color/black"
-            android:text="円" />
-
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="8dp"
-        android:textColor="@color/black"
-        android:text="※利息の小数点は切り上げて計算しています。\n  税金は考慮していません"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-</LinearLayout>
+</ScrollView>
