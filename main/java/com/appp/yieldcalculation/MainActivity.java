@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 int Results = (int) investmentResults;//運用成績をint型に変換
                 String str = String.valueOf(Results);//運用成績を文字列型に変換
                 TextView textView = findViewById(R.id.textViewresult);
-                textView.setText(str);//運用成績をテキストビューに出力
+                textView.setText(String.format("%,d",Results));//運用成績をテキストビューに出力
             }
         });
     }
