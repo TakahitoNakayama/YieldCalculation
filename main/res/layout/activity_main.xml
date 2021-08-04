@@ -4,14 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#1B87D9F4">
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#1B87D9F4"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -191,7 +191,6 @@
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-
                 android:textColor="@color/black"
                 android:text="円" />
 

@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         culcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try{
+
                 EditText number1 = findViewById(R.id.et_accumulation_period);//ナンバー１(積立年数入力欄)を変数にする
                 Log.d("MainActivity", "number1");
                 String number1String = number1.getText().toString();//ナンバー１に入力されたテキストを文字列にして変数に代入
@@ -81,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 String str = String.valueOf(Results);//運用成績を文字列型に変換
                 TextView textView = findViewById(R.id.textViewresult);
                 textView.setText(String.format("%,d",Results));//運用成績をテキストビューに出力
+                }catch (NumberFormatException n){
+                    Toast.makeText(MainActivity.this,"空白欄があります",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
